@@ -15,7 +15,7 @@ class ChatInput extends Component {
         action="."
         onSubmit={e => {
           e.preventDefault();
-          this.props.onSubmitMessage(this.state.message);
+          this.props.onSubmitMessage(this.state.message, this.state.name);
           this.setState({ message: "" });
         }}
       >
